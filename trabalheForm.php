@@ -6,9 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div class="logo">
-		<img src="imagens/folha2.png" alt="logo da abelha">
-	</div>
+	<?php include('./view/header.php'); ?>
 	<h1 class="bnr" > Trabalhe conosco</h1>
 	
 	
@@ -94,15 +92,18 @@
 				<li> <a href="index.html">voltar</a></li>
 			</ul>
 		  
+	<aside class="lateral">
+		<h3>Você sabia ?</h3>
+		<p>
+			A agricultura de precisão, de acordo com a Embrapa, é um conjunto de técnicas de apoio à agricultura. Esta se dá por tecnologias de informação, sensores, mapas, geoprocessamento e se baseia em práticas agrícolas, clima e na variabilidade da planta em relação ao solo. Ou seja, são técnicas que visam melhorar a produtividade e o solo se baseando em estudos cartográficos, climatológicos e ambientais.
+			A preservação e otimização do uso da água está diretamente ligada à importância que é dada a este recurso. Se o observamos como algo imprescindível, insubstituível e finito, damos muito mais valor e tendemos a usá-lo com mais sabedoria.
+		</p>
+
+ 	</aside>
+	
+	<?php include('./view/footer.php') ?>
 </body>
 
-<aside class="lateral">
-	<h3>Você sabia ?</h3>
-	<p>
-		A agricultura de precisão, de acordo com a Embrapa, é um conjunto de técnicas de apoio à agricultura. Esta se dá por tecnologias de informação, sensores, mapas, geoprocessamento e se baseia em práticas agrícolas, clima e na variabilidade da planta em relação ao solo. Ou seja, são técnicas que visam melhorar a produtividade e o solo se baseando em estudos cartográficos, climatológicos e ambientais.
-		A preservação e otimização do uso da água está diretamente ligada à importância que é dada a este recurso. Se o observamos como algo imprescindível, insubstituível e finito, damos muito mais valor e tendemos a usá-lo com mais sabedoria.
-	</p>
 
- </aside>
 </html>
 
