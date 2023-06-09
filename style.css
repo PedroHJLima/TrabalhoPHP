@@ -45,16 +45,18 @@ h4{
 }
 
 #topo{
+	position: fixed;
+	width: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
- 	background-color: #72DA77;
+	justify-content: space-around;
+	padding: 0 90px;
  	height: 100px;
  	padding: 10px 30px;
-	padding-top: auto;
-	padding-bottom: auto;
-	
-	
+	margin: 0;
+	z-index: 999;
+	background-image: linear-gradient(180deg,#72DA77 80%,transparent);
+	opacity: 80%;
 }
 
 #contato{
@@ -70,6 +72,7 @@ h4{
 }
 
 #banner{
+	padding-top: 80px;
  	text-align: center;
  	height: 200px;
 	background-color: #c1ecc3;
@@ -82,14 +85,14 @@ h4{
 }
 
 #bannerImg{
-	padding-top: 64px;
 	display: flex;
 	justify-content: center;
+	transition: .5s;
 }
 
 #bannerImg img{
-	width: 1680px; 
-	height: 480px;
+	width: 100%;
+	height: 800px;
 	object-fit:cover;
 }
 
@@ -139,7 +142,7 @@ aside{
 	text-align: center;
 	height: 140px;
 	border: solid 1px 333;
-	background-color:#008400  ;
+	background-color:#008400 ;
 }
 
 .cbs{
@@ -175,4 +178,32 @@ aside{
 p{
 	font-size: 18px;
 	text-align: justify;
+}
+
+#servico{
+	width: 40%;
+	margin: 0 auto; 
+	text-align: center;
+	padding: 32px;
+	background-color:#3F704D;
+	border: #000;
+	border-radius: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 48px;
+	font-weight: bold;
+}
+
+#contato{
+	width: 40%;
+	margin: 0 auto; 
+	text-align: center;
+	padding: 32px;
+	background-color:#3F704D;
+	border: #000;
+	border-radius: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 48px;
+	font-weight: bold;
 }

@@ -31,9 +31,7 @@
 
 
                 <nav id="contato">
-                    <ul>
-                        <li> <a href="trabalheForm.php">Trabalhe conosco</a></li>
-                    </ul>
+                    <a href="trabalheForm.php">Trabalhe conosco</a></li>
                 </nav>
     </div>
 

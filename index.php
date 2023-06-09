@@ -5,18 +5,17 @@
 	<title>Site da agrotec</title>
 	<link rel="stylesheet" type="text/css" href="./style.css">
 	<link rel="icon" type="image/x-icon" href="imagens/folha.png">
+
 </head>
 <body>
 	<?php include('./view/header.php'); ?>
 
-	<section id="banner">
-		<h2>Inicio</h2>
-	</section>
+	<div id="bannerImg">
+		<img src="imagens/banner.jpeg" alt="Banner de campo">
+	</div>
 
 	<div class="corpo">
-		<div id="bannerImg">
-			<img src="imagens/banner.jpeg" alt="Banner de campo">
-		</div>
+		
 		
 		<main id="conteudo"> 
 			<div>

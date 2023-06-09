@@ -12,25 +12,25 @@
     <section id="banner"> <h1> Nossos produtos e serviços</h1></section>
 
     <div class="corpo">
-        <main id="conteudo">
+        <main id="conteudoProduto">
             <h1>Nossos produtos e serviços</h1>
 
             <h2> Bioadubo</h2>
                 
             <p>LioAdubo é um composto orgânico que contém nutrientes que aumentam o crescimento, enraizamento e dão mais vigor para as plantas. 
-    Apresenta um feito imediato. Elaborado a partir de tratamento biológico de materiais orgânicos e vegetais, através de uma ação de macro e microrganismos específicos do solo.</p>
+Apresenta um feito imediato. Elaborado a partir de tratamento biológico de materiais orgânicos e vegetais, através de uma ação de macro e microrganismos específicos do solo.</p>
                 
             <img src="imagens/bioadubo.jpg" alt="drone2">
 
 
             <h2>Para que serve um trator agrícola? </h2>
             <p>Como citado acima, o trator agrícola é essencial para a agricultura. Ele é um veículo que desempenha diversas funções, como arar, cultivar e plantar os campos. 
-    Os modelos mais modernos podem ser usados para uma variedade ainda maior de tarefas, como cuidado de rotina com os gramados, manutenção da paisagem, distribuição de fertilizantes em arbustos, 
-    entre outros.</p>
+Os modelos mais modernos podem ser usados para uma variedade ainda maior de tarefas, como cuidado de rotina com os gramados, manutenção da paisagem, distribuição de fertilizantes em arbustos, 
+entre outros.</p>
 
             <p> Falando em modelos, existem diversos tipos de tratores disponíveis hoje em dia, cada modelo sendo adequado para uma tarefa específica. Se você precisa trabalhar em um grande 
-    jardim ou uma extensa área de campo ou pastagem, um modelo subcompacto ou trator compacto vai atender aos trabalhos pesados de paisagismo e tarefas como escavação, 
-    transporte ou lavra. Já um trator utilitário é ideal para tarefas de paisagismo. Enfim, basta escolher o que melhor adequa-se a sua realidade.</p>
+jardim ou uma extensa área de campo ou pastagem, um modelo subcompacto ou trator compacto vai atender aos trabalhos pesados de paisagismo e tarefas como escavação, 
+transporte ou lavra. Já um trator utilitário é ideal para tarefas de paisagismo. Enfim, basta escolher o que melhor adequa-se a sua realidade.</p>
 
             <h2> O que é um implemento agrícola?</h2>
             <p> Os implementos agrícolas são equipamentos que acoplados a algum sistema de tração, como os tratores auxiliando no preparo do solo, adubação, implantação da cultura e colheita. 
@@ -52,7 +52,7 @@
     área de interesse.</p>
             </main>
 
-            <div id>
+            <div id="servico">
                 <a href="servicoForm.php">Solicitar Orçamento</a>
             </div>
 </div>
