@@ -113,6 +113,7 @@ main{
 
 }
 aside{
+	white-space: nowrap;
 	float: right;
 	background-color: rgb(108, 214, 140);
 	color: #fff;
