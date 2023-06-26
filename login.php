@@ -1,44 +1,50 @@
-<?php require_once "conecta.php"; ?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Select Banco de dados</title>
-</head>
-<body>
-<?php 
-	$usuarios = buscar($conecta, "usuarios", "nome DESC");
-?>
-<table border="1">
-	<tr>
-		<td>id</td>
-		<td>Nome</td>
-		<td>E-mail</td>
-		<td>Senha</td>
-	</tr>
-<?php foreach ($usuarios as $usuario) { ?>
-		<tr>
-			<td><?php echo $usuario['id']; ?></td>
-			<td><?php echo $usuario['nome']; ?></td>
-			<td><?php echo $usuario['email']; ?></td>
-			<td><?php echo $usuario['senha']; ?></td>
-		</tr>
-<?php } ?>
-</table>
-<?php 
-//Criptografias 
-echo $senha = "teste";
-echo "<hr>";
-echo $cripto = base64_encode($senha);
-echo "<hr>";
-echo base64_decode($cripto);
-echo "<hr>";
-echo md5($senha);
-echo "<hr>";
-echo sha1($senha);
-echo "<hr>";
-echo password_hash($senha, PASSWORD_DEFAULT);
+<?php
+// Conexão com o banco de dados
+$host = "localhost"; // ou o endereço do servidor do banco de dados
+$nome_bd = "agrotec"; // nome do banco de dados
+$usuario_bd = "root"; // usuário do banco de dados
+$senha_bd = ""; // senha do banco de dados
 
-?>
 
-</body>
-</html>
+// Estabelecer a conexão
+$conexao = new mysqli($host, $usuario_bd, $senha_bd, $nome_bd);
+
+// Verificar se a conexão foi estabelecida com sucesso
+if (!$conexao) {
+    die("Erro na conexão com o banco de dados: " . mysqli_connect_error());
+}
+
+// Verificar se o formulário foi enviado
+if(isset($_POST['logar'])){
+    // Obter os valores do formulário
+    $usuario = $_POST['usuario'];
+    $senha = $_POST['senha'];
+
+    // Consultar o banco de dados para verificar se os dados existem e pertencem ao mesmo usuário
+    $query = "SELECT * FROM administradores WHERE usuario = '$usuario' AND senha = '$senha'";
+    $resultado = mysqli_query($conexao, $query);
+
+    // Verificar se a consulta retornou algum resultado
+    if(mysqli_num_rows($resultado) == 1){
+        // Os dados de login são válidos
+        session_start();
+        $_SESSION['ativa'] = TRUE;
+
+        header("Location: admin.php");
+
+
+
+        exit(); // Certifique-se de sair do script após o redirecionamento
+        // Redirecionar para a página inicial do usuário ou executar outras ações
+    } else {
+        // Os dados de login são inválidos
+        echo "Usuário ou senha incorretos.";
+    }
+
+    // Liberar recursos
+    mysqli_free_result($resultado);
+}
+
+// Fechar a conexão com o banco de dados
+mysqli_close($conexao);
+?>

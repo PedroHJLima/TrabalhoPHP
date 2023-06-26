@@ -27,6 +27,7 @@
             <li> <a href="produtos.php">Produtos e serviços</a></li>
             <li> <a href="contato.php">Contatos</a></li>
             <li> <a href="fotos.php">Fotos</a></li>
+            <li><a href ="loginIndex.php"><img src="imagens/user.png" alt="usuario"></a><li>
             </ul>	
     </nav>
 
