@@ -22,12 +22,8 @@
 
     <nav class="menu">
         <ul>
-            <li> <a href="sobreNos.php">Sobre nós</a></li>
-            <li> <a href="missoes.php">Missões</a></li>
-            <li> <a href="produtos.php">Produtos e serviços</a></li>
-            <li> <a href="contato.php">Contatos</a></li>
-            <li> <a href="fotos.php">Fotos</a></li>
-            <li id="usuario"><a href ="loginIndex.php"><img src="imagens/user.png" alt="usuario"></a><li>
+            <li> <a href="admin.php">Administradores</a></li>
+            <li> <a href="users.php">Usuarios</a></li>
             </ul>	
     </nav>
 

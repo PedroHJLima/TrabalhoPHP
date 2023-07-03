@@ -1,0 +1,216 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: verdana,arial,sans-serif;
+	background-color: #e8e4d3;
+
+}
+
+footer {
+	background-color: #72DA77;
+	height: 100px;
+	padding: 10px 30px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	margin-top: 36px;
+ 
+}
+
+
+a{
+	text-decoration: none;
+	color: #181d27 ;
+	font-weight: bold;
+}
+
+#mundoAgro{
+	text-align: center;
+	font-size: 48px;
+	margin: 64px;
+}
+
+header h3{
+	display: inline-block;
+	font-size: 48px;
+	color: #181d27;
+}
+
+h4{
+	display: inline;
+}
+
+.sectionIndex{
+	margin-top: 128px;
+}
+
+#topo{
+	position: fixed;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 0 90px;
+ 	height: 100px;
+ 	padding: 10px 30px;
+	margin: 0;
+	z-index: 999;
+	background-image: linear-gradient(180deg,#72DA77 80%,transparent);
+	opacity: 80%;
+}
+
+#contato{
+	display: inline-block;
+}
+
+
+.menu ul  li{
+	list-style: none;
+	display: inline-block;
+	padding: 5px 10px;
+	
+}
+
+#banner{
+	padding-top: 80px;
+ 	text-align: center;
+ 	height: 200px;
+	background-color: #c1ecc3;
+	font-size: 32px;
+	font-style:normal;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+#bannerImg{
+	display: flex;
+	justify-content: center;
+	transition: .5s;
+}
+
+#bannerImg img{
+	width: 100%;
+	height: 800px;
+	object-fit:cover;
+}
+
+#bnr1{
+	text-align: center;
+	font-size: 75px;
+
+}
+main{
+	padding: 20px 30px;
+
+}
+.info{
+	float: right;
+	width: 75%;
+	padding-right: 20px;
+	box-sizing: border-box;
+
+}
+aside{
+	white-space: nowrap;
+	float: right;
+	background-color: rgb(108, 214, 140);
+	color: #fff;
+	border: solid 1px rgb(15, 114, 45);
+	border-radius: 10px;
+	padding: 10px;
+	width: 25%;
+	box-sizing: border-box;
+}
+
+.corpo{
+	max-width: 80%;
+    margin: auto;
+    padding: 8px;
+    padding-top: 70px;
+	text-align: justify;
+}
+
+.img{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-evenly;
+	gap: 2vw;
+	padding: 0% 2vw;
+}
+.baner{
+	text-align: center;
+	height: 140px;
+	border: solid 1px 333;
+	background-color:#008400 ;
+}
+
+.cbs{
+	height: 150px;
+	display: flex ;
+	justify-content: center;
+	align-items: center;
+	font-size: 3rem;
+	font-weight: 900;
+	color: #000;
+
+
+}
+
+.glr{
+	width: 3040px;
+	height: 250px;
+	border: 10px solid rgba(16, 136, 22, 0.473); 
+	box-shadow: #000;
+	flex-grow: 1;
+}
+
+.glr img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+}
+.glr:hover{
+	transform: scale(1.1);
+}
+
+p{
+	font-size: 18px;
+	text-align: justify;
+}
+
+#servico{
+	width: 40%;
+	margin: 0 auto; 
+	text-align: center;
+	padding: 32px;
+	background-color:#3F704D;
+	border: #000;
+	border-radius: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 48px;
+	font-weight: bold;
+}
+
+#contato{
+	width: 40%;
+	margin: 0 auto; 
+	text-align: center;
+	padding: 32px;
+	background-color:#3F704D;
+	border: #000;
+	border-radius: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 48px;
+	font-weight: bold;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

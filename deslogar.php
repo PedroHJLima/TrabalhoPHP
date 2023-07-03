@@ -1,11 +1,11 @@
 <?php
+// Iniciar a sessão
 session_start();
 
-//Limpar os caches
-session_unset();
+// Definir $_SESSION['ativa'] como false
+$_SESSION['ativa'] = false;
 
-//Encerra a session
-session_destroy();
-
-//Redireciona para outra página
-header("location: index.php");
+// Redirecionar para a página de login
+header("Location: loginIndex.php");
+exit;
+?>
